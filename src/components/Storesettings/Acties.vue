@@ -44,10 +44,10 @@
     function imageLink(url){
         if(url[0] != '/'){
            // return `${window.location.origin}/${url}`
-            return `https://www.cooplubbers.nl/${url}`
+            return `/${url}`
         }
         else{
-            return `https://www.cooplubbers.nl${url}`
+            return `${url}`
         }
     }
 

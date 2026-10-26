@@ -55,3 +55,13 @@ Vervangen door een versie zonder persoonsgegevens:
 |---|---|---|
 | `src/assets/Coop Lubbers-gebruiksvoorwaarden-online.pdf` | naam, woonadres en KvK-nummer van de leverancier (eenmanszaak) | zelfde tekst, met die gegevens vervangen door `[NAAM LEVERANCIER]`, `[ADRES LEVERANCIER]` en `[KVK-NUMMER]` |
 | `public/img/soon.jpg` | herkenbare foto van een persoon | zelfde tekst en logo zonder foto |
+
+## Draaien met Docker
+
+```
+docker compose up -d --build
+```
+
+De app wordt gebouwd (Node 16, vanwege `node-sass` 6) en door nginx geserveerd op poort 8108. nginx stuurt `/api/`
+door naar de server (`Visualshopping-Server`, variabele `API_UPSTREAM` in `docker-compose.yml`). Inloggen met de
+demo-werknemer uit de server-repo: `demo@example.com` / `demo1234`.

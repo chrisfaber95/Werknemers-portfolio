@@ -1,7 +1,7 @@
 <template>
     <div class="product">
         <div class="basic">
-            <img :src="`https://www.cooplubbers.nl/${item.imgurl}`" />
+            <img :src="`/${item.imgurl}`" />
             <p v-html="item.department_id ? `ID: ${item.department_id}` : ''"></p>
             <!--<p v-html="item.slug || ''"></p>-->
         </div>

@@ -10,7 +10,7 @@
         </div>
         <div class="information" v-if="state.editProduct == false">
             <img
-            :src="`https://www.cooplubbers.nl${state.imageUrl}`"
+            :src="`${state.imageUrl}`"
             @click="state.change_image = true; "
           />
           <div class="basic">

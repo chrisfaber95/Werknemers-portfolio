@@ -1,6 +1,6 @@
 <template>
     <div class="product" @click="openEdit()">
-        <img :src="`https://www.cooplubbers.nl${state.product?.product_information?.imgurl}`" />
+        <img :src="`${state.product?.product_information?.imgurl}`" />
         <div class="basic">
             <p v-html="`${state.product?.product_information?.title || ''}  ${state.product?.product_information?.variant || ''}`"></p>
             <p v-html="state.product?.ean || ''"></p>

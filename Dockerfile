@@ -1,4 +1,4 @@
-# Node 16: de nieuwste versie waarvoor node-sass 6 een binary heeft.
+# Node 16: de versie waarmee de app gemaakt is (vue-cli 4.5).
 FROM node:16.20.2-bookworm AS build
 WORKDIR /app
 COPY package.json package-lock.json .npmrc ./

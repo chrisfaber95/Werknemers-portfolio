@@ -1,0 +1,9 @@
+# Werknemers-app van Coop Lubbers met nginx; /api/ gaat naar Visualshopping-Server (op de homelab poort 8106).
+services:
+  web:
+    build: .
+    restart: unless-stopped
+    environment:
+      API_UPSTREAM: http://100.85.70.34:8106
+    ports:
+      - "100.85.70.34:8108:80"

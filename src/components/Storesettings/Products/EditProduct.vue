@@ -1,7 +1,7 @@
 <template>
   <div class="product">
     <img
-      :src="`https://www.cooplubbers.nl${state.imageUrl}`"
+      :src="`${state.imageUrl}`"
       @click="state.change_image = true; "
     />
     <button @click="state.change_image = true;" v-html="'Afbeelding wijzigen'"></button>        

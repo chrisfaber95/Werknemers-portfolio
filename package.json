@@ -11,6 +11,7 @@
     "@chenfengyuan/vue-barcode": "^2.0.0",
     "@fortawesome/fontawesome-free": "^5.15.1",
     "axios": "^0.21.0",
+    "chart.js": "^3.9.1",
     "chartjs-adapter-luxon": "^1.1.0",
     "chartjs-adapter-moment": "^1.0.0",
     "core-js": "^3.6.5",

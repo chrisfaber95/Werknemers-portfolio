@@ -89,7 +89,7 @@
 				<div v-html="`Prijs: ${parseFloat(products.stamps_cost).toFixed(0)} zegels`"></div>
 			</div>
 			<div class="img" @click="state.imgviewer = !state.imgviewer">
-				<img class="img-fluid" v-bind:src="`https://www.cooplubbers.nl${products?.product?.product_information?.imgurl}`" />
+				<img class="img-fluid" v-bind:src="`${products?.product?.product_information?.imgurl}`" />
 				<img v-if="products?.product?.product_information?.imgurl" class="zoomicon" :src=zoom />
 			</div>
 			<div class="modal-overlay"

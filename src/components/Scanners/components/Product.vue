@@ -7,7 +7,7 @@
         </div>
         <div class="image-block">            
             <img class="nix18" v-if="product.nix18" :src="require('@/assets/icons/nix-18.svg')" />			
-            <img class="product-image" :src="`https://www.cooplubbers.nl${product.product_information.imgurl}`" />
+            <img class="product-image" :src="`${product.product_information.imgurl}`" />
         </div>
         
         <div class="basic-info small">
